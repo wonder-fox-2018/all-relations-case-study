@@ -1,2 +1,6 @@
-data company memiliki foreign keys; employeesId, departmentsId, projectsId
-hubungan antara table Company dengan dengan table employeesId adalah one to one, karena setiap id karyawan masing2 menempati table Company, sedangkan table Departments dan Projects dengan Company adalah one to many. karena setiap karyawan dapat mengerjakan lebih dari 1 projectsId, jadi kemungkinan beberapa karyawan dapat melakukan 1 projectsId yang sama dan setiap karyawan dapat menempati posisi deparmentsId yang sama juga
+data CompanyJobs memiliki foreign keys; employeesId, projectsId
+
+
+hubungan antara table Employees dengan Departments adalah many to one
+hubungan antara table Projects dengan CompanyJobs adalah one to many
+hubungan antara table Employees dengan CompanyJobs adalah one to one karena setiap karyawan dapat mengerjakan lebih dari satu project
